@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		<bean id="userDao" class="com.neu.sankalp.DAO.UserDAO"></bean>
+		<bean id="adminDao" class="com.neu.sankalp.DAO.AdminDAO"></bean>
+		<bean id="bookDao" class="com.neu.sankalp.DAO.BookDAO"></bean>
+		<bean id="person" class="com.neu.sankalp.pojo.Person"></bean>
+		<bean id="book" class="com.neu.sankalp.pojo.Book"></bean>
+		<bean id="category" class="com.neu.sankalp.pojo.Category"></bean>
+		<bean id="bookTransaction" class="com.neu.sankalp.pojo.BookTransaction"></bean>
+		<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
+</beans>
